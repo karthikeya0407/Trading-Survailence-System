@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-03-14T01:17:32.332559",
+  "dataset": {
+    "n_total": 6600,
+    "n_suspicious": 600,
+    "suspicious_pct": 9.090909090909092,
+    "n_features": 34
+  },
+  "performance": {
+    "roc_auc": 1.0,
+    "avg_precision": 1.0,
+    "cv_auc_mean": 1.0,
+    "cv_auc_std": 0.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "accuracy": 1.0
+  },
+  "models_used": [
+    "RandomForest(n=300)",
+    "GradientBoosting(n=200)",
+    "IsolationForest(n=250)",
+    "LocalOutlierFactor(k=25)"
+  ],
+  "patterns_modelled": [
+    "Normal",
+    "Pump & Dump",
+    "Spoofing",
+    "Layering",
+    "Wash Trading",
+    "Front Running"
+  ],
+  "top_10_features": [
+    "freq_counterparty_ratio",
+    "num_counterparties",
+    "market_dominance",
+    "volume_to_market_ratio",
+    "trade_frequency",
+    "cross_market_activity",
+    "frequency_time_ratio",
+    "log_order_size_variance",
+    "order_size_variance",
+    "night_volume_product"
+  ]
+}

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Trader Network Graph — Trading Surveillance</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap');
+
+  :root {
+    --bg     : #050810;
+    --panel  : #090d16;
+    --border : #0f1a2e;
+    --accent : #00d4ff;
+    --danger : #ff2d55;
+    --warn   : #ff9f0a;
+    --safe   : #30d158;
+    --text   : #c8d8f0;
+    --muted  : #4a5a7a;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family:'Rajdhani', sans-serif;
+    background:var(--bg); color:var(--text);
+    height:100vh; overflow:hidden;
+    display:flex; flex-direction:column;
+  }
+
+  /* ── HEADER ── */
+  header {
+    display:flex; align-items:center;
+    justify-content:space-between;
+    padding:14px 28px;
+    border-bottom:1px solid var(--border);
+    background:var(--panel);
+    flex-shrink:0;
+  }
+
+  .logo {
+    font-family:'Share Tech Mono',monospace;
+    font-size:14px; color:var(--accent);
+    letter-spacing:3px;
+  }
+
+  .back-btn {
+    background:rgba(0,212,255,0.08);
+    border:1px solid rgba(0,212,255,0.2);
+    color:var(--accent);
+    font-family:'Share Tech Mono',monospace;
+    font-size:11px; letter-spacing:2px;
+    padding:7px 16px; border-radius:4px;
+    cursor:pointer; text-decoration:none;
+    transition:background 0.2s;
+  }
+  .back-btn:hover { background:rgba(0,212,255,0.15); }
+
+  /* ── MAIN LAYOUT ── */
+  .main {
+    display:flex; flex:1; overflow:hidden;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width:280px; flex-shrink:0;
+    background:var(--panel);
+    border-right:1px solid var(--border);
+    overflow-y:auto; padding:16px;
+    display:flex; flex-direction:column; gap:14px;
+  }
+
+  .sidebar-section {
+    background:rgba(255,255,255,0.02);
+    border:1px solid var(--border);
+    border-radius:6px; padding:14px;
+  }
+
+  .section-title {
+    font-size:9px; letter-spacing:3px;
+    color:var(--accent); text-transform:uppercase;
+    font-family:'Share Tech Mono',monospace;
+    margin-bottom:12px;
+  }
+
+  .stat-row {
+    display:flex; justify-content:space-between;
+    align-items:center; padding:5px 0;
+    border-bottom:1px solid rgba(255,255,255,0.04);
+  }
+  .stat-row:last-child { border:none; }
+  .stat-key  { font-size:11px; color:var(--muted); }
+  .stat-val  { font-size:13px; font-weight:600;
+               font-family:'Share Tech Mono',monospace; }
+
+  .legend-item {
+    display:flex; align-items:center; gap:10px;
+    padding:5px 0;
+  }
+  .legend-dot {
+    width:12px; height:12px; border-radius:50%;
+    flex-shrink:0;
+  }
+  .legend-label { font-size:12px; color:var(--muted); }
+
+  /* ── CONTROLS ── */
+  .control-group { display:flex; flex-direction:column; gap:6px; }
+  .control-label {
+    font-size:9px; letter-spacing:2px;
+    color:var(--muted); font-family:'Share Tech Mono',monospace;
+  }
+  input[type=range] {
+    width:100%; accent-color:var(--accent);
+  }
+
+  .filter-btn {
+    width:100%; padding:8px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:4px; color:var(--text);
+    font-family:'Share Tech Mono',monospace;
+    font-size:11px; letter-spacing:1px;
+    cursor:pointer; transition:all 0.2s;
+    text-align:left;
+  }
+  .filter-btn:hover,
+  .filter-btn.active {
+    border-color:var(--accent);
+    background:rgba(0,212,255,0.06);
+    color:var(--accent);
+  }
+
+  /* ── NODE TOOLTIP ── */
+  #tooltip {
+    position:fixed;
+    background:rgba(9,13,22,0.97);
+    border:1px solid var(--border);
+    border-radius:6px; padding:14px;
+    pointer-events:none;
+    opacity:0; transition:opacity 0.2s;
+    z-index:100; min-width:200px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.5);
+  }
+  .tt-id {
+    font-family:'Share Tech Mono',monospace;
+    font-size:14px; color:var(--accent);
+    margin-bottom:8px;
+  }
+  .tt-row {
+    display:flex; justify-content:space-between;
+    font-size:11px; padding:3px 0;
+    border-bottom:1px solid rgba(255,255,255,0.04);
+  }
+  .tt-key { color:var(--muted); }
+  .tt-val { font-family:'Share Tech Mono',monospace; font-weight:600; }
+
+  /* ── GRAPH AREA ── */
+  #graph {
+    flex:1; position:relative; overflow:hidden;
+  }
+
+  svg { width:100%; height:100%; }
+
+  .node circle {
+    stroke-width:2px;
+    cursor:pointer;
+    transition:r 0.2s;
+  }
+  .node circle:hover { stroke-width:3px; }
+  .node text {
+    font-family:'Share Tech Mono',monospace;
+    font-size:8px; fill:#4a5a7a;
+    pointer-events:none;
+    text-anchor:middle;
+  }
+
+  .link {
+    stroke-opacity:0.35;
+    transition:stroke-opacity 0.2s;
+  }
+  .link.suspicious { stroke-opacity:0.6; }
+  .link:hover      { stroke-opacity:1; }
+
+  /* ── SELECTED PANEL ── */
+  #selectedPanel {
+    position:absolute; bottom:20px; right:20px;
+    background:rgba(9,13,22,0.95);
+    border:1px solid var(--border);
+    border-radius:8px; padding:16px;
+    min-width:240px; display:none;
+    box-shadow:0 8px 32px rgba(0,0,0,0.6);
+  }
+
+  /* ── LOADING ── */
+  #loading {
+    position:absolute; inset:0;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    gap:12px; background:var(--bg);
+  }
+  .spin {
+    width:32px; height:32px;
+    border:3px solid var(--border);
+    border-top-color:var(--accent);
+    border-radius:50%;
+    animation:spin 0.8s linear infinite;
+  }
+  @keyframes spin { to{transform:rotate(360deg)} }
+  .load-text {
+    font-family:'Share Tech Mono',monospace;
+    font-size:12px; color:var(--muted); letter-spacing:3px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TRADER NETWORK GRAPH — SURVEILLANCE SYSTEM</div>
+  <a href="dashboard.html" class="back-btn">BACK TO DASHBOARD</a>
+</header>
+
+<div class="main">
+
+  <!-- ── SIDEBAR ── -->
+  <div class="sidebar">
+
+    <div class="sidebar-section">
+      <div class="section-title">Network Summary</div>
+      <div class="stat-row">
+        <span class="stat-key">Total Traders</span>
+        <span class="stat-val" id="sTotalTraders">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Connections</span>
+        <span class="stat-val" id="sTotalEdges">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">High Risk</span>
+        <span class="stat-val" style="color:var(--danger)" id="sHighRisk">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Medium Risk</span>
+        <span class="stat-val" style="color:var(--warn)" id="sMedRisk">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Suspicious Links</span>
+        <span class="stat-val" style="color:var(--danger)" id="sSuspLinks">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Communities</span>
+        <span class="stat-val" id="sCommunities">--</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Susp. Clusters</span>
+        <span class="stat-val" style="color:var(--warn)" id="sClusters">--</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="section-title">Legend</div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--danger);box-shadow:0 0 8px var(--danger)"></div>
+        <span class="legend-label">High Risk Trader</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--warn);box-shadow:0 0 8px var(--warn)"></div>
+        <span class="legend-label">Medium Risk Trader</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--safe);box-shadow:0 0 6px var(--safe)"></div>
+        <span class="legend-label">Low Risk Trader</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--danger);border-radius:0;width:20px;height:3px"></div>
+        <span class="legend-label">Suspicious Connection</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--muted);border-radius:0;width:20px;height:1px"></div>
+        <span class="legend-label">Normal Connection</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="section-title">Filters</div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <button class="filter-btn active" onclick="filterNodes('all', this)">ALL TRADERS</button>
+        <button class="filter-btn" onclick="filterNodes('HIGH', this)">HIGH RISK ONLY</button>
+        <button class="filter-btn" onclick="filterNodes('MEDIUM', this)">MEDIUM RISK</button>
+        <button class="filter-btn" onclick="filterNodes('suspicious_links', this)">SUSPICIOUS LINKS</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="section-title">Controls</div>
+      <div class="control-group">
+        <span class="control-label">Link Strength</span>
+        <input type="range" id="linkStrength" min="10" max="300" value="100"
+               oninput="updateForce()"/>
+      </div>
+      <div class="control-group" style="margin-top:8px">
+        <span class="control-label">Node Repulsion</span>
+        <input type="range" id="repulsion" min="-800" max="-50" value="-300"
+               oninput="updateForce()"/>
+      </div>
+      <div class="control-group" style="margin-top:8px">
+        <span class="control-label">Node Size</span>
+        <input type="range" id="nodeSize" min="3" max="20" value="8"
+               oninput="updateNodeSize()"/>
+      </div>
+    </div>
+
+    <div class="sidebar-section" id="topHubs">
+      <div class="section-title">Top Hub Traders</div>
+      <div id="hubList"></div>
+    </div>
+
+  </div>
+
+  <!-- ── GRAPH ── -->
+  <div id="graph">
+    <div id="loading">
+      <div class="spin"></div>
+      <div class="load-text">BUILDING NETWORK...</div>
+    </div>
+    <svg id="svg"></svg>
+
+    <div id="selectedPanel">
+      <div class="tt-id" id="selId">--</div>
+      <div class="tt-row"><span class="tt-key">Risk Score</span><span class="tt-val" id="selScore">--</span></div>
+      <div class="tt-row"><span class="tt-key">Risk Level</span><span class="tt-val" id="selLevel">--</span></div>
+      <div class="tt-row"><span class="tt-key">Pattern</span><span class="tt-val" id="selPattern">--</span></div>
+      <div class="tt-row"><span class="tt-key">Total Trades</span><span class="tt-val" id="selTrades">--</span></div>
+      <div class="tt-row"><span class="tt-key">Suspicious</span><span class="tt-val" id="selSusp">--</span></div>
+      <div class="tt-row"><span class="tt-key">Degree Centrality</span><span class="tt-val" id="selDeg">--</span></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── TOOLTIP ── -->
+<div id="tooltip">
+  <div class="tt-id" id="ttId"></div>
+  <div class="tt-row"><span class="tt-key">Risk Score</span><span class="tt-val" id="ttScore"></span></div>
+  <div class="tt-row"><span class="tt-key">Risk Level</span><span class="tt-val" id="ttLevel"></span></div>
+  <div class="tt-row"><span class="tt-key">Pattern</span><span class="tt-val" id="ttPattern"></span></div>
+  <div class="tt-row"><span class="tt-key">Trades</span><span class="tt-val" id="ttTrades"></span></div>
+  <div class="tt-row"><span class="tt-key">Cancel Rate</span><span class="tt-val" id="ttCancel"></span></div>
+</div>
+
+<script>
+const NODE_COLOR = {
+  HIGH  : '#ff2d55',
+  MEDIUM: '#ff9f0a',
+  LOW   : '#30d158',
+};
+
+let simulation, linkSel, nodeSel, graphData;
+
+// ── LOAD NETWORK JSON ─────────────────────────────────────────
+async function loadNetwork() {
+  try {
+    // Try API first
+    const r = await fetch('http://127.0.0.1:8000/network');
+    if (r.ok) {
+      graphData = await r.json();
+    } else {
+      throw new Error('API endpoint not available');
+    }
+  } catch(e) {
+    // Load from local JSON file
+    try {
+      const r2 = await fetch('reports/network_graph.json');
+      graphData = await r2.json();
+    } catch(e2) {
+      // Generate demo data if neither available
+      graphData = generateDemoData();
+    }
+  }
+
+  renderSummary(graphData.summary);
+  renderHubs(graphData.summary.top_hub_traders);
+  buildGraph(graphData);
+  document.getElementById('loading').style.display = 'none';
+}
+
+// ── DEMO DATA (fallback) ──────────────────────────────────────
+function generateDemoData() {
+  const levels  = ['HIGH','MEDIUM','LOW'];
+  const patterns= ['Pump & Dump','Spoofing','Layering','Wash Trading','Front Running','Normal'];
+  const nodes   = [];
+  const edges   = [];
+
+  for (let i = 0; i < 60; i++) {
+    const risk = i < 10 ? 'HIGH' : i < 25 ? 'MEDIUM' : 'LOW';
+    nodes.push({
+      id              : `TDR${String(i).padStart(3,'0')}`,
+      x               : (Math.random()-0.5)*600,
+      y               : (Math.random()-0.5)*600,
+      risk_score      : risk==='HIGH' ? 0.7+Math.random()*0.3
+                       : risk==='MEDIUM' ? 0.4+Math.random()*0.3
+                       : Math.random()*0.4,
+      risk_level      : risk,
+      pattern         : patterns[Math.floor(Math.random()*patterns.length)],
+      total_trades    : Math.floor(Math.random()*200+10),
+      avg_volume      : Math.floor(Math.random()*100000+5000),
+      avg_cancel      : Math.random().toFixed(3),
+      suspicious_count: Math.floor(Math.random()*20),
+      degree_centrality: Math.random().toFixed(4),
+      betweenness_centrality: Math.random().toFixed(4),
+      community       : Math.floor(Math.random()*8),
+    });
+  }
+
+  for (let i = 0; i < 120; i++) {
+    const s = Math.floor(Math.random()*60);
+    const t = Math.floor(Math.random()*60);
+    if (s !== t) {
+      const w = Math.random();
+      edges.push({
+        source    : `TDR${String(s).padStart(3,'0')}`,
+        target    : `TDR${String(t).padStart(3,'0')}`,
+        weight    : parseFloat(w.toFixed(3)),
+        suspicious: w > 0.5,
+      });
+    }
+  }
+
+  return {
+    nodes,
+    edges,
+    summary: {
+      total_traders          : 60,
+      total_connections      : 120,
+      high_risk_traders      : 10,
+      medium_risk_traders    : 15,
+      suspicious_connections : 60,
+      communities_detected   : 8,
+      suspicious_clusters    : 3,
+      top_hub_traders        : nodes.slice(0,5).map(n=>[n.id, +n.degree_centrality]),
+    }
+  };
+}
+
+// ── RENDER SIDEBAR STATS ─────────────────────────────────────
+function renderSummary(s) {
+  document.getElementById('sTotalTraders').textContent = s.total_traders;
+  document.getElementById('sTotalEdges').textContent   = s.total_connections;
+  document.getElementById('sHighRisk').textContent     = s.high_risk_traders;
+  document.getElementById('sMedRisk').textContent      = s.medium_risk_traders;
+  document.getElementById('sSuspLinks').textContent    = s.suspicious_connections;
+  document.getElementById('sCommunities').textContent  = s.communities_detected;
+  document.getElementById('sClusters').textContent     = s.suspicious_clusters;
+}
+
+function renderHubs(hubs) {
+  document.getElementById('hubList').innerHTML = hubs.map(([id, cent])=>`
+    <div class="stat-row">
+      <span class="stat-key" style="color:var(--accent)">${id}</span>
+      <span class="stat-val">${(+cent).toFixed(4)}</span>
+    </div>
+  `).join('');
+}
+
+// ── BUILD D3 GRAPH ────────────────────────────────────────────
+function buildGraph(data) {
+  const svg    = d3.select('#svg');
+  const W      = document.getElementById('graph').clientWidth;
+  const H      = document.getElementById('graph').clientHeight;
+
+  svg.selectAll('*').remove();
+
+  // Zoom
+  const g = svg.append('g');
+  svg.call(d3.zoom()
+    .scaleExtent([0.1, 4])
+    .on('zoom', e => g.attr('transform', e.transform))
+  );
+
+  // Clone data for simulation
+  const nodes = data.nodes.map(d=>({...d}));
+  const edges = data.edges.map(d=>({...d}));
+
+  // Build simulation
+  simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(edges)
+      .id(d=>d.id)
+      .distance(+document.getElementById('linkStrength').value))
+    .force('charge', d3.forceManyBody()
+      .strength(+document.getElementById('repulsion').value))
+    .force('center', d3.forceCenter(W/2, H/2))
+    .force('collision', d3.forceCollide(14));
+
+  // Links
+  linkSel = g.append('g').selectAll('line')
+    .data(edges).join('line')
+    .attr('class', d => `link${d.suspicious?' suspicious':''}`)
+    .attr('stroke', d => d.suspicious ? '#ff2d5560' : '#0f1a2e')
+    .attr('stroke-width', d => d.suspicious ? 1.5 : 0.8);
+
+  // Nodes
+  const nodeG = g.append('g').selectAll('g')
+    .data(nodes).join('g')
+    .attr('class','node')
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag',  dragged)
+      .on('end',   dragEnd)
+    )
+    .on('mouseover', showTooltip)
+    .on('mousemove', moveTooltip)
+    .on('mouseout',  hideTooltip)
+    .on('click',     selectNode);
+
+  nodeSel = nodeG.append('circle')
+    .attr('r', d => nodeRadius(d))
+    .attr('fill', d => NODE_COLOR[d.risk_level] + '22')
+    .attr('stroke', d => NODE_COLOR[d.risk_level])
+    .style('filter', d =>
+      d.risk_level==='HIGH'
+        ? 'drop-shadow(0 0 6px #ff2d55)'
+        : d.risk_level==='MEDIUM'
+        ? 'drop-shadow(0 0 4px #ff9f0a)'
+        : 'none'
+    );
+
+  nodeG.append('text')
+    .attr('dy', d => nodeRadius(d) + 10)
+    .text(d => d.id);
+
+  simulation.on('tick', () => {
+    linkSel
+      .attr('x1', d=>d.source.x).attr('y1', d=>d.source.y)
+      .attr('x2', d=>d.target.x).attr('y2', d=>d.target.y);
+    nodeG.attr('transform', d=>`translate(${d.x},${d.y})`);
+  });
+}
+
+function nodeRadius(d) {
+  const base = +document.getElementById('nodeSize').value || 8;
+  return base + d.risk_score * base;
+}
+
+// ── DRAG ─────────────────────────────────────────────────────
+function dragStart(e,d) {
+  if(!e.active) simulation.alphaTarget(0.3).restart();
+  d.fx=d.x; d.fy=d.y;
+}
+function dragged(e,d) { d.fx=e.x; d.fy=e.y; }
+function dragEnd(e,d) {
+  if(!e.active) simulation.alphaTarget(0);
+  d.fx=null; d.fy=null;
+}
+
+// ── TOOLTIP ──────────────────────────────────────────────────
+function showTooltip(e,d) {
+  const t = document.getElementById('tooltip');
+  document.getElementById('ttId').textContent      = d.id;
+  document.getElementById('ttScore').textContent   = d.risk_score.toFixed(4);
+  document.getElementById('ttScore').style.color   = NODE_COLOR[d.risk_level];
+  document.getElementById('ttLevel').textContent   = d.risk_level;
+  document.getElementById('ttLevel').style.color   = NODE_COLOR[d.risk_level];
+  document.getElementById('ttPattern').textContent = d.pattern;
+  document.getElementById('ttTrades').textContent  = d.total_trades;
+  document.getElementById('ttCancel').textContent  = (+d.avg_cancel).toFixed(3);
+  t.style.opacity='1';
+}
+function moveTooltip(e) {
+  const t = document.getElementById('tooltip');
+  t.style.left = (e.clientX+14)+'px';
+  t.style.top  = (e.clientY-10)+'px';
+}
+function hideTooltip() {
+  document.getElementById('tooltip').style.opacity='0';
+}
+
+// ── SELECT NODE ───────────────────────────────────────────────
+function selectNode(e,d) {
+  const p = document.getElementById('selectedPanel');
+  document.getElementById('selId').textContent      = d.id;
+  document.getElementById('selScore').textContent   = d.risk_score.toFixed(4);
+  document.getElementById('selScore').style.color   = NODE_COLOR[d.risk_level];
+  document.getElementById('selLevel').textContent   = d.risk_level;
+  document.getElementById('selLevel').style.color   = NODE_COLOR[d.risk_level];
+  document.getElementById('selPattern').textContent = d.pattern;
+  document.getElementById('selTrades').textContent  = d.total_trades;
+  document.getElementById('selSusp').textContent    = d.suspicious_count;
+  document.getElementById('selDeg').textContent     = (+d.degree_centrality).toFixed(4);
+  p.style.display='block';
+}
+
+// ── FILTER ────────────────────────────────────────────────────
+function filterNodes(type, btn) {
+  document.querySelectorAll('.filter-btn')
+    .forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+
+  d3.selectAll('.node circle').style('opacity', d => {
+    if (type==='all')            return 1;
+    if (type==='suspicious_links') return 1;
+    return d.risk_level===type ? 1 : 0.1;
+  });
+
+  d3.selectAll('.link').style('opacity', d => {
+    if (type==='suspicious_links') return d.suspicious ? 0.8 : 0.05;
+    return 0.35;
+  });
+}
+
+// ── UPDATE FORCE ─────────────────────────────────────────────
+function updateForce() {
+  if (!simulation) return;
+  simulation
+    .force('link').distance(+document.getElementById('linkStrength').value);
+  simulation
+    .force('charge').strength(+document.getElementById('repulsion').value);
+  simulation.alpha(0.3).restart();
+}
+
+// ── UPDATE NODE SIZE ──────────────────────────────────────────
+function updateNodeSize() {
+  if (!nodeSel) return;
+  nodeSel.attr('r', d => nodeRadius(d));
+}
+
+// ── INIT ─────────────────────────────────────────────────────
+loadNetwork();
+</script>
+</body>
+</html>

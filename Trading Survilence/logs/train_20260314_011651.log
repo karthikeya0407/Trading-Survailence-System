@@ -1,0 +1,46 @@
+2026-03-14 01:16:51,956 | INFO     | train_pipeline |   PHASE 1 — DATA
+2026-03-14 01:16:51,965 | INFO     | train_pipeline | Generating fresh synthetic trading data …
+2026-03-14 01:16:52,075 | INFO     | data_generator | Generated 6600 trades | 600 suspicious (9.1%)
+2026-03-14 01:16:52,195 | INFO     | data_generator | Saved 6600 rows to C:\Users\johni\OneDrive\Desktop\Project\Trading Survilence\data\trades.db
+2026-03-14 01:16:52,198 | INFO     | train_pipeline | Dataset: 6600 trades | 600 suspicious (9.1%)
+2026-03-14 01:16:52,199 | INFO     | train_pipeline | Pattern breakdown:
+2026-03-14 01:16:52,200 | INFO     | train_pipeline |   Normal               : 6000
+2026-03-14 01:16:52,201 | INFO     | train_pipeline |   Pump & Dump          : 120
+2026-03-14 01:16:52,203 | INFO     | train_pipeline |   Spoofing             : 120
+2026-03-14 01:16:52,204 | INFO     | train_pipeline |   Layering             : 120
+2026-03-14 01:16:52,205 | INFO     | train_pipeline |   Wash Trading         : 120
+2026-03-14 01:16:52,206 | INFO     | train_pipeline |   Front Running        : 120
+2026-03-14 01:16:52,213 | INFO     | train_pipeline |   PHASE 2 — FEATURE ENGINEERING
+2026-03-14 01:16:52,252 | INFO     | feature_engineering | Feature engineering complete — 34 total features
+2026-03-14 01:16:52,253 | INFO     | train_pipeline | Total feature columns: 34
+2026-03-14 01:16:52,267 | INFO     | train_pipeline |   PHASE 3 — MODEL TRAINING
+2026-03-14 01:16:52,272 | INFO     | model | Fitting RobustScaler …
+2026-03-14 01:16:52,299 | INFO     | model | Training supervised ensemble (RF + GradBoost) …
+2026-03-14 01:17:18,085 | INFO     | model | CV ROC-AUC: 1.0000 ± 0.0000
+2026-03-14 01:17:28,341 | INFO     | model | Training Isolation Forest …
+2026-03-14 01:17:28,909 | INFO     | model | Fitting LOF …
+2026-03-14 01:17:32,246 | INFO     | model | Training complete | ROC-AUC=1.0000 | Avg-Prec=1.0000 | Precision=1.0000 | Recall=1.0000 | F1=1.0000
+2026-03-14 01:17:32,251 | INFO     | train_pipeline |   PHASE 4 — SAVING ARTIFACTS
+2026-03-14 01:17:32,368 | INFO     | train_pipeline |   PHASE 5 — VISUALISATION
+2026-03-14 01:17:41,444 | INFO     | train_pipeline |   PHASE 6 — SHAP EXPLAINABILITY
+2026-03-14 01:17:41,454 | INFO     | shap_explainer | Starting SHAP analysis ...
+2026-03-14 01:17:41,455 | INFO     | shap_explainer | Computing SHAP values for 1000 samples across 300 trees ...
+2026-03-14 01:17:41,945 | INFO     | shap_explainer | SHAP computation complete | expected_value=0.0914
+2026-03-14 01:17:41,946 | INFO     | shap_explainer | Generating SHAP summary plot ...
+2026-03-14 01:17:42,937 | INFO     | shap_explainer | Generating SHAP bar chart ...
+2026-03-14 01:17:43,365 | INFO     | shap_explainer | Generating waterfall plots ...
+2026-03-14 01:17:44,573 | INFO     | shap_explainer | Generating SHAP heatmap ...
+2026-03-14 01:17:45,711 | INFO     | shap_explainer | Generating dependence plots ...
+2026-03-14 01:17:46,813 | INFO     | shap_explainer | Exporting SHAP JSON ...
+2026-03-14 01:17:46,855 | INFO     | shap_explainer | SHAP analysis complete — 6 output files
+2026-03-14 01:17:46,898 | INFO     | train_pipeline |   PIPELINE COMPLETE
+2026-03-14 01:17:46,905 | INFO     | train_pipeline | Wall time           : 55.0 s
+2026-03-14 01:17:46,906 | INFO     | train_pipeline | ROC-AUC             : 1.0000
+2026-03-14 01:17:46,907 | INFO     | train_pipeline | Avg Precision       : 1.0000
+2026-03-14 01:17:46,907 | INFO     | train_pipeline | CV AUC (5-fold)     : 1.0000 ± 0.0000
+2026-03-14 01:17:46,908 | INFO     | train_pipeline | Precision (susp)    : 1.0000
+2026-03-14 01:17:46,908 | INFO     | train_pipeline | Recall    (susp)    : 1.0000
+2026-03-14 01:17:46,909 | INFO     | train_pipeline | F1-Score  (susp)    : 1.0000
+2026-03-14 01:17:46,909 | INFO     | train_pipeline | Dashboard           : C:\Users\johni\OneDrive\Desktop\Project\Trading Survilence\reports\dashboard.png
+2026-03-14 01:17:46,910 | INFO     | train_pipeline | Model bundle        : C:\Users\johni\OneDrive\Desktop\Project\Trading Survilence\models\model_bundle.pkl
+2026-03-14 01:17:46,911 | INFO     | train_pipeline | Log                 : C:\Users\johni\OneDrive\Desktop\Project\Trading Survilence\logs\train_20260314_011651.log

@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-03-19T12:47:45.947521",
+  "total_alerts": 20,
+  "alerts": [
+    {
+      "alert_id": "ALT000001",
+      "trade_id": "TRD002531",
+      "risk_score": 0.7471,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7471 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.865332",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000002",
+      "trade_id": "TRD001784",
+      "risk_score": 0.7303,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7303 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.874254",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000003",
+      "trade_id": "TRD000581",
+      "risk_score": 0.7241,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7241 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.877060",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000004",
+      "trade_id": "TRD001447",
+      "risk_score": 0.7203,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7203 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.879153",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000005",
+      "trade_id": "TRD001079",
+      "risk_score": 0.7199,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7199 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.880182",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000006",
+      "trade_id": "TRD000796",
+      "risk_score": 0.7186,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7186 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.880783",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000007",
+      "trade_id": "TRD001818",
+      "risk_score": 0.7186,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7186 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.881247",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000008",
+      "trade_id": "TRD002887",
+      "risk_score": 0.7177,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7177 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.886448",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000009",
+      "trade_id": "TRD005475",
+      "risk_score": 0.7166,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7166 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.897337",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000010",
+      "trade_id": "TRD003883",
+      "risk_score": 0.7157,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7157 Reason=volume_to_market_ratio",
+      "timestamp": "2026-03-19T12:47:45.911941",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000011",
+      "trade_id": "TRD003972",
+      "risk_score": 0.713,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7130 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.913720",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000012",
+      "trade_id": "TRD002916",
+      "risk_score": 0.7127,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7127 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.914945",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000013",
+      "trade_id": "TRD002594",
+      "risk_score": 0.7124,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7124 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.925032",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000014",
+      "trade_id": "TRD004884",
+      "risk_score": 0.7111,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7111 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.928929",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000015",
+      "trade_id": "TRD005832",
+      "risk_score": 0.7107,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7107 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.929533",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000016",
+      "trade_id": "TRD006308",
+      "risk_score": 0.7104,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7104 Reason=freq_counterparty_ratio",
+      "timestamp": "2026-03-19T12:47:45.930044",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000017",
+      "trade_id": "TRD005609",
+      "risk_score": 0.7099,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7099 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.930982",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000018",
+      "trade_id": "TRD000792",
+      "risk_score": 0.7087,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7087 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.932178",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000019",
+      "trade_id": "TRD001015",
+      "risk_score": 0.7082,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7082 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.933897",
+      "severity": "CRITICAL"
+    },
+    {
+      "alert_id": "ALT000020",
+      "trade_id": "TRD006290",
+      "risk_score": 0.7082,
+      "risk_level": "HIGH",
+      "alert_type": "HIGH_RISK_TRADE",
+      "message": "HIGH RISK trade detected! Score=0.7082 Reason=market_dominance",
+      "timestamp": "2026-03-19T12:47:45.937492",
+      "severity": "CRITICAL"
+    }
+  ]
+}

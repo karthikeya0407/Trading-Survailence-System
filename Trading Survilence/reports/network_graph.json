@@ -1,0 +1,2995 @@
+{
+  "nodes": [
+    {
+      "id": "TDR000",
+      "x": -2.8,
+      "y": 395.32,
+      "risk_score": 0.2888,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 9819.2,
+      "avg_cancel": 0.1139,
+      "suspicious_count": 7,
+      "community": 2,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.004
+    },
+    {
+      "id": "TDR001",
+      "x": 337.1,
+      "y": 159.86,
+      "risk_score": 0.3214,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 84,
+      "avg_volume": 8309.38,
+      "avg_cancel": 0.1367,
+      "suspicious_count": 10,
+      "community": 4,
+      "degree_centrality": 0.1519,
+      "betweenness_centrality": 0.0462
+    },
+    {
+      "id": "TDR002",
+      "x": -263.09,
+      "y": -303.5,
+      "risk_score": 0.2713,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 81,
+      "avg_volume": 7016.91,
+      "avg_cancel": 0.1315,
+      "suspicious_count": 5,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0182
+    },
+    {
+      "id": "TDR003",
+      "x": -344.59,
+      "y": 220.93,
+      "risk_score": 0.2394,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 89,
+      "avg_volume": 5339.21,
+      "avg_cancel": 0.1205,
+      "suspicious_count": 4,
+      "community": 3,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0126
+    },
+    {
+      "id": "TDR004",
+      "x": 131.32,
+      "y": 342.4,
+      "risk_score": 0.2686,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 68,
+      "avg_volume": 10324.41,
+      "avg_cancel": 0.1195,
+      "suspicious_count": 3,
+      "community": 2,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0104
+    },
+    {
+      "id": "TDR005",
+      "x": -282.07,
+      "y": 315.37,
+      "risk_score": 0.2932,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 85,
+      "avg_volume": 5048.01,
+      "avg_cancel": 0.1293,
+      "suspicious_count": 9,
+      "community": 3,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0129
+    },
+    {
+      "id": "TDR006",
+      "x": 291.4,
+      "y": -273.4,
+      "risk_score": 0.3165,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 69,
+      "avg_volume": 10149.42,
+      "avg_cancel": 0.1332,
+      "suspicious_count": 6,
+      "community": 0,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0103
+    },
+    {
+      "id": "TDR007",
+      "x": -313.44,
+      "y": -240.79,
+      "risk_score": 0.3513,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 90,
+      "avg_volume": 9730.69,
+      "avg_cancel": 0.1437,
+      "suspicious_count": 13,
+      "community": 4,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0152
+    },
+    {
+      "id": "TDR008",
+      "x": -182.71,
+      "y": 280.85,
+      "risk_score": 0.2915,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 7224.61,
+      "avg_cancel": 0.122,
+      "suspicious_count": 6,
+      "community": 3,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0094
+    },
+    {
+      "id": "TDR009",
+      "x": 94.24,
+      "y": -349.92,
+      "risk_score": 0.2858,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 75,
+      "avg_volume": 5202.28,
+      "avg_cancel": 0.1333,
+      "suspicious_count": 10,
+      "community": 4,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0067
+    },
+    {
+      "id": "TDR010",
+      "x": 128.79,
+      "y": -368.98,
+      "risk_score": 0.2457,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 73,
+      "avg_volume": 6367.46,
+      "avg_cancel": 0.1187,
+      "suspicious_count": 5,
+      "community": 3,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0234
+    },
+    {
+      "id": "TDR011",
+      "x": -320.77,
+      "y": -180.46,
+      "risk_score": 0.2817,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 87,
+      "avg_volume": 8476.94,
+      "avg_cancel": 0.0949,
+      "suspicious_count": 8,
+      "community": 0,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0089
+    },
+    {
+      "id": "TDR012",
+      "x": -44.49,
+      "y": 370.67,
+      "risk_score": 0.2694,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 98,
+      "avg_volume": 5632.94,
+      "avg_cancel": 0.1207,
+      "suspicious_count": 7,
+      "community": 2,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0129
+    },
+    {
+      "id": "TDR013",
+      "x": -354.38,
+      "y": 114.4,
+      "risk_score": 0.2763,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 71,
+      "avg_volume": 8248.14,
+      "avg_cancel": 0.1294,
+      "suspicious_count": 5,
+      "community": 3,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.0332
+    },
+    {
+      "id": "TDR014",
+      "x": 83.53,
+      "y": -393.05,
+      "risk_score": 0.3225,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 92,
+      "avg_volume": 10917.23,
+      "avg_cancel": 0.136,
+      "suspicious_count": 10,
+      "community": 1,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0184
+    },
+    {
+      "id": "TDR015",
+      "x": 163.13,
+      "y": -349.08,
+      "risk_score": 0.3044,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 7314.05,
+      "avg_cancel": 0.1375,
+      "suspicious_count": 7,
+      "community": 1,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0189
+    },
+    {
+      "id": "TDR016",
+      "x": -208.37,
+      "y": 358.39,
+      "risk_score": 0.2965,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 106,
+      "avg_volume": 8596.53,
+      "avg_cancel": 0.1128,
+      "suspicious_count": 11,
+      "community": 1,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.012
+    },
+    {
+      "id": "TDR017",
+      "x": 358.68,
+      "y": 205.57,
+      "risk_score": 0.3303,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 82,
+      "avg_volume": 7657.56,
+      "avg_cancel": 0.1479,
+      "suspicious_count": 8,
+      "community": 2,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.023
+    },
+    {
+      "id": "TDR018",
+      "x": -164.84,
+      "y": -361.85,
+      "risk_score": 0.2642,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 95,
+      "avg_volume": 5808.53,
+      "avg_cancel": 0.112,
+      "suspicious_count": 9,
+      "community": 0,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.0029
+    },
+    {
+      "id": "TDR019",
+      "x": 303.97,
+      "y": -203.29,
+      "risk_score": 0.2495,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 79,
+      "avg_volume": 6400.46,
+      "avg_cancel": 0.1164,
+      "suspicious_count": 3,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.024
+    },
+    {
+      "id": "TDR020",
+      "x": -381.03,
+      "y": 46.68,
+      "risk_score": 0.291,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 99,
+      "avg_volume": 6538.28,
+      "avg_cancel": 0.1348,
+      "suspicious_count": 8,
+      "community": 1,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0216
+    },
+    {
+      "id": "TDR021",
+      "x": -318.32,
+      "y": 268.37,
+      "risk_score": 0.3855,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 12746.78,
+      "avg_cancel": 0.1529,
+      "suspicious_count": 12,
+      "community": 4,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0168
+    },
+    {
+      "id": "TDR022",
+      "x": -268.06,
+      "y": 256.91,
+      "risk_score": 0.2922,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 85,
+      "avg_volume": 8313.73,
+      "avg_cancel": 0.1453,
+      "suspicious_count": 7,
+      "community": 1,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0077
+    },
+    {
+      "id": "TDR023",
+      "x": -5.58,
+      "y": 331.03,
+      "risk_score": 0.2972,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 6851.5,
+      "avg_cancel": 0.1344,
+      "suspicious_count": 8,
+      "community": 4,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0045
+    },
+    {
+      "id": "TDR024",
+      "x": 47.95,
+      "y": -379.2,
+      "risk_score": 0.298,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 90,
+      "avg_volume": 12299.37,
+      "avg_cancel": 0.1123,
+      "suspicious_count": 5,
+      "community": 2,
+      "degree_centrality": 0.038,
+      "betweenness_centrality": 0.0018
+    },
+    {
+      "id": "TDR025",
+      "x": 383.83,
+      "y": 145.01,
+      "risk_score": 0.2897,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 95,
+      "avg_volume": 8368.4,
+      "avg_cancel": 0.111,
+      "suspicious_count": 11,
+      "community": 2,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.0037
+    },
+    {
+      "id": "TDR026",
+      "x": 289.07,
+      "y": 300.01,
+      "risk_score": 0.2987,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 6053.41,
+      "avg_cancel": 0.1355,
+      "suspicious_count": 9,
+      "community": 1,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0171
+    },
+    {
+      "id": "TDR027",
+      "x": 62.28,
+      "y": 388.39,
+      "risk_score": 0.3182,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 87,
+      "avg_volume": 7930.52,
+      "avg_cancel": 0.135,
+      "suspicious_count": 9,
+      "community": 0,
+      "degree_centrality": 0.1392,
+      "betweenness_centrality": 0.0328
+    },
+    {
+      "id": "TDR028",
+      "x": -345.86,
+      "y": -208.07,
+      "risk_score": 0.2648,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 86,
+      "avg_volume": 7542.16,
+      "avg_cancel": 0.1056,
+      "suspicious_count": 5,
+      "community": 2,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.027
+    },
+    {
+      "id": "TDR029",
+      "x": -392.06,
+      "y": -69.82,
+      "risk_score": 0.3179,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 7013.41,
+      "avg_cancel": 0.1541,
+      "suspicious_count": 11,
+      "community": 0,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.0025
+    },
+    {
+      "id": "TDR030",
+      "x": -137.28,
+      "y": -345.75,
+      "risk_score": 0.2579,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 59,
+      "avg_volume": 5915.26,
+      "avg_cancel": 0.1256,
+      "suspicious_count": 4,
+      "community": 1,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0148
+    },
+    {
+      "id": "TDR031",
+      "x": 377.62,
+      "y": -86.57,
+      "risk_score": 0.344,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 90,
+      "avg_volume": 10495.88,
+      "avg_cancel": 0.1408,
+      "suspicious_count": 11,
+      "community": 4,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.027
+    },
+    {
+      "id": "TDR032",
+      "x": -302.25,
+      "y": 197.35,
+      "risk_score": 0.3228,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 8676.62,
+      "avg_cancel": 0.1462,
+      "suspicious_count": 7,
+      "community": 0,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0084
+    },
+    {
+      "id": "TDR033",
+      "x": -238.39,
+      "y": 314.78,
+      "risk_score": 0.3304,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 72,
+      "avg_volume": 7648.23,
+      "avg_cancel": 0.1496,
+      "suspicious_count": 10,
+      "community": 3,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0098
+    },
+    {
+      "id": "TDR034",
+      "x": -148.97,
+      "y": 386.52,
+      "risk_score": 0.3204,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 84,
+      "avg_volume": 9084.82,
+      "avg_cancel": 0.1142,
+      "suspicious_count": 9,
+      "community": 4,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0082
+    },
+    {
+      "id": "TDR035",
+      "x": 222.66,
+      "y": -324.67,
+      "risk_score": 0.2922,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 90,
+      "avg_volume": 8220.31,
+      "avg_cancel": 0.1196,
+      "suspicious_count": 8,
+      "community": 4,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.0301
+    },
+    {
+      "id": "TDR036",
+      "x": -384.09,
+      "y": 143.31,
+      "risk_score": 0.326,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 74,
+      "avg_volume": 7807.38,
+      "avg_cancel": 0.162,
+      "suspicious_count": 8,
+      "community": 1,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0095
+    },
+    {
+      "id": "TDR037",
+      "x": 241.55,
+      "y": 291.66,
+      "risk_score": 0.3247,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 94,
+      "avg_volume": 7067.88,
+      "avg_cancel": 0.1572,
+      "suspicious_count": 10,
+      "community": 1,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0049
+    },
+    {
+      "id": "TDR038",
+      "x": 197.35,
+      "y": -356.93,
+      "risk_score": 0.2732,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 6971.11,
+      "avg_cancel": 0.1227,
+      "suspicious_count": 6,
+      "community": 1,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0104
+    },
+    {
+      "id": "TDR039",
+      "x": 12.9,
+      "y": -388.07,
+      "risk_score": 0.256,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 86,
+      "avg_volume": 7664.64,
+      "avg_cancel": 0.1245,
+      "suspicious_count": 4,
+      "community": 0,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0189
+    },
+    {
+      "id": "TDR040",
+      "x": 374.58,
+      "y": 111.51,
+      "risk_score": 0.2417,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 72,
+      "avg_volume": 5774.83,
+      "avg_cancel": 0.1068,
+      "suspicious_count": 4,
+      "community": 3,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0173
+    },
+    {
+      "id": "TDR041",
+      "x": -25.3,
+      "y": -397.54,
+      "risk_score": 0.2657,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 85,
+      "avg_volume": 6589.71,
+      "avg_cancel": 0.1268,
+      "suspicious_count": 6,
+      "community": 4,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0127
+    },
+    {
+      "id": "TDR042",
+      "x": -255.04,
+      "y": -269.25,
+      "risk_score": 0.2603,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 75,
+      "avg_volume": 7709.64,
+      "avg_cancel": 0.1209,
+      "suspicious_count": 3,
+      "community": 0,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0238
+    },
+    {
+      "id": "TDR043",
+      "x": 275.46,
+      "y": 251.7,
+      "risk_score": 0.3496,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 76,
+      "avg_volume": 9603.29,
+      "avg_cancel": 0.1659,
+      "suspicious_count": 10,
+      "community": 0,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0179
+    },
+    {
+      "id": "TDR044",
+      "x": 391.79,
+      "y": 10.26,
+      "risk_score": 0.2842,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 88,
+      "avg_volume": 8914.24,
+      "avg_cancel": 0.1518,
+      "suspicious_count": 5,
+      "community": 1,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.033
+    },
+    {
+      "id": "TDR045",
+      "x": -351.57,
+      "y": 173.14,
+      "risk_score": 0.3013,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 74,
+      "avg_volume": 7950.59,
+      "avg_cancel": 0.1516,
+      "suspicious_count": 7,
+      "community": 2,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0167
+    },
+    {
+      "id": "TDR046",
+      "x": 368.29,
+      "y": 75.56,
+      "risk_score": 0.3178,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 96,
+      "avg_volume": 7380.79,
+      "avg_cancel": 0.1602,
+      "suspicious_count": 9,
+      "community": 3,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.0033
+    },
+    {
+      "id": "TDR047",
+      "x": 376.24,
+      "y": -20.54,
+      "risk_score": 0.3514,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 79,
+      "avg_volume": 15744.75,
+      "avg_cancel": 0.1211,
+      "suspicious_count": 10,
+      "community": 1,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0231
+    },
+    {
+      "id": "TDR048",
+      "x": 321.4,
+      "y": -120.3,
+      "risk_score": 0.2891,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 92,
+      "avg_volume": 8165.36,
+      "avg_cancel": 0.1295,
+      "suspicious_count": 10,
+      "community": 1,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0198
+    },
+    {
+      "id": "TDR049",
+      "x": -313.77,
+      "y": -276.72,
+      "risk_score": 0.2716,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 73,
+      "avg_volume": 10869.99,
+      "avg_cancel": 0.0897,
+      "suspicious_count": 6,
+      "community": 3,
+      "degree_centrality": 0.0506,
+      "betweenness_centrality": 0.0047
+    },
+    {
+      "id": "TDR050",
+      "x": -389.67,
+      "y": 85.03,
+      "risk_score": 0.3062,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 93,
+      "avg_volume": 8672.31,
+      "avg_cancel": 0.1355,
+      "suspicious_count": 12,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0221
+    },
+    {
+      "id": "TDR051",
+      "x": -260.72,
+      "y": -9.21,
+      "risk_score": 0.2497,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 74,
+      "avg_volume": 9074.95,
+      "avg_cancel": 0.0979,
+      "suspicious_count": 3,
+      "community": 1,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0253
+    },
+    {
+      "id": "TDR052",
+      "x": 378.2,
+      "y": -124.76,
+      "risk_score": 0.3191,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 81,
+      "avg_volume": 7918.4,
+      "avg_cancel": 0.1594,
+      "suspicious_count": 10,
+      "community": 2,
+      "degree_centrality": 0.1519,
+      "betweenness_centrality": 0.0525
+    },
+    {
+      "id": "TDR053",
+      "x": -107.18,
+      "y": 355.08,
+      "risk_score": 0.2587,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 96,
+      "avg_volume": 7522.28,
+      "avg_cancel": 0.1046,
+      "suspicious_count": 6,
+      "community": 1,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0084
+    },
+    {
+      "id": "TDR054",
+      "x": -202.07,
+      "y": -350.34,
+      "risk_score": 0.2839,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 81,
+      "avg_volume": 8045.06,
+      "avg_cancel": 0.118,
+      "suspicious_count": 6,
+      "community": 1,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0152
+    },
+    {
+      "id": "TDR055",
+      "x": -222.53,
+      "y": -320.4,
+      "risk_score": 0.2936,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 7293.72,
+      "avg_cancel": 0.1329,
+      "suspicious_count": 7,
+      "community": 2,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0143
+    },
+    {
+      "id": "TDR056",
+      "x": 325.69,
+      "y": 247.28,
+      "risk_score": 0.3594,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 84,
+      "avg_volume": 8661.09,
+      "avg_cancel": 0.1547,
+      "suspicious_count": 14,
+      "community": 0,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.0391
+    },
+    {
+      "id": "TDR057",
+      "x": 106.5,
+      "y": 374.07,
+      "risk_score": 0.2781,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 85,
+      "avg_volume": 5423.15,
+      "avg_cancel": 0.1204,
+      "suspicious_count": 9,
+      "community": 0,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.0275
+    },
+    {
+      "id": "TDR058",
+      "x": 262.58,
+      "y": -300.56,
+      "risk_score": 0.2577,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 97,
+      "avg_volume": 8364.09,
+      "avg_cancel": 0.0983,
+      "suspicious_count": 7,
+      "community": 1,
+      "degree_centrality": 0.038,
+      "betweenness_centrality": 0.0016
+    },
+    {
+      "id": "TDR059",
+      "x": 390.15,
+      "y": 47.26,
+      "risk_score": 0.2697,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 93,
+      "avg_volume": 7698.53,
+      "avg_cancel": 0.1182,
+      "suspicious_count": 7,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.02
+    },
+    {
+      "id": "TDR060",
+      "x": 172.01,
+      "y": 363.12,
+      "risk_score": 0.2378,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 79,
+      "avg_volume": 5425.36,
+      "avg_cancel": 0.1132,
+      "suspicious_count": 3,
+      "community": 3,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0086
+    },
+    {
+      "id": "TDR061",
+      "x": -82.55,
+      "y": -385.26,
+      "risk_score": 0.2804,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 100,
+      "avg_volume": 6628.21,
+      "avg_cancel": 0.133,
+      "suspicious_count": 8,
+      "community": 0,
+      "degree_centrality": 0.1392,
+      "betweenness_centrality": 0.0387
+    },
+    {
+      "id": "TDR062",
+      "x": -361.11,
+      "y": -90.07,
+      "risk_score": 0.3022,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 86,
+      "avg_volume": 10376.04,
+      "avg_cancel": 0.1158,
+      "suspicious_count": 7,
+      "community": 1,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0088
+    },
+    {
+      "id": "TDR063",
+      "x": 229.62,
+      "y": 328.61,
+      "risk_score": 0.3184,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 10805.71,
+      "avg_cancel": 0.1337,
+      "suspicious_count": 9,
+      "community": 0,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0277
+    },
+    {
+      "id": "TDR064",
+      "x": -400.0,
+      "y": 9.5,
+      "risk_score": 0.3564,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 70,
+      "avg_volume": 12934.35,
+      "avg_cancel": 0.1282,
+      "suspicious_count": 8,
+      "community": 0,
+      "degree_centrality": 0.1519,
+      "betweenness_centrality": 0.0469
+    },
+    {
+      "id": "TDR065",
+      "x": -46.06,
+      "y": -373.1,
+      "risk_score": 0.2589,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 76,
+      "avg_volume": 7050.61,
+      "avg_cancel": 0.1236,
+      "suspicious_count": 3,
+      "community": 2,
+      "degree_centrality": 0.1392,
+      "betweenness_centrality": 0.0354
+    },
+    {
+      "id": "TDR066",
+      "x": -368.99,
+      "y": -126.8,
+      "risk_score": 0.294,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 9102.3,
+      "avg_cancel": 0.1075,
+      "suspicious_count": 9,
+      "community": 2,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0184
+    },
+    {
+      "id": "TDR067",
+      "x": 398.36,
+      "y": -53.25,
+      "risk_score": 0.2982,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 83,
+      "avg_volume": 8993.02,
+      "avg_cancel": 0.1243,
+      "suspicious_count": 8,
+      "community": 2,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0232
+    },
+    {
+      "id": "TDR068",
+      "x": 48.71,
+      "y": 359.73,
+      "risk_score": 0.2492,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 80,
+      "avg_volume": 5892.62,
+      "avg_cancel": 0.1083,
+      "suspicious_count": 5,
+      "community": 1,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0119
+    },
+    {
+      "id": "TDR069",
+      "x": -82.97,
+      "y": 391.39,
+      "risk_score": 0.2778,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 76,
+      "avg_volume": 8369.34,
+      "avg_cancel": 0.1227,
+      "suspicious_count": 6,
+      "community": 3,
+      "degree_centrality": 0.0633,
+      "betweenness_centrality": 0.0052
+    },
+    {
+      "id": "TDR070",
+      "x": 375.4,
+      "y": -165.15,
+      "risk_score": 0.23,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 69,
+      "avg_volume": 5924.13,
+      "avg_cancel": 0.1076,
+      "suspicious_count": 5,
+      "community": 4,
+      "degree_centrality": 0.1392,
+      "betweenness_centrality": 0.0354
+    },
+    {
+      "id": "TDR071",
+      "x": 224.26,
+      "y": -281.26,
+      "risk_score": 0.2364,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 81,
+      "avg_volume": 7743.68,
+      "avg_cancel": 0.0844,
+      "suspicious_count": 3,
+      "community": 2,
+      "degree_centrality": 0.0886,
+      "betweenness_centrality": 0.0176
+    },
+    {
+      "id": "TDR072",
+      "x": -120.37,
+      "y": -387.7,
+      "risk_score": 0.325,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 74,
+      "avg_volume": 7057.4,
+      "avg_cancel": 0.1356,
+      "suspicious_count": 9,
+      "community": 2,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0237
+    },
+    {
+      "id": "TDR073",
+      "x": 289.35,
+      "y": 197.21,
+      "risk_score": 0.3435,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 72,
+      "avg_volume": 8544.17,
+      "avg_cancel": 0.1245,
+      "suspicious_count": 10,
+      "community": 3,
+      "degree_centrality": 0.1266,
+      "betweenness_centrality": 0.0346
+    },
+    {
+      "id": "TDR074",
+      "x": -367.1,
+      "y": -164.03,
+      "risk_score": 0.3475,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 90,
+      "avg_volume": 8426.55,
+      "avg_cancel": 0.1651,
+      "suspicious_count": 13,
+      "community": 2,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0133
+    },
+    {
+      "id": "TDR075",
+      "x": 322.68,
+      "y": -243.82,
+      "risk_score": 0.2382,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 80,
+      "avg_volume": 5845.3,
+      "avg_cancel": 0.1088,
+      "suspicious_count": 3,
+      "community": 2,
+      "degree_centrality": 0.1139,
+      "betweenness_centrality": 0.0199
+    },
+    {
+      "id": "TDR076",
+      "x": -380.27,
+      "y": -27.36,
+      "risk_score": 0.2677,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 72,
+      "avg_volume": 5222.32,
+      "avg_cancel": 0.1302,
+      "suspicious_count": 6,
+      "community": 3,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0107
+    },
+    {
+      "id": "TDR077",
+      "x": 358.4,
+      "y": -207.66,
+      "risk_score": 0.3827,
+      "risk_level": "MEDIUM",
+      "pattern": "Normal",
+      "total_trades": 85,
+      "avg_volume": 13068.92,
+      "avg_cancel": 0.1504,
+      "suspicious_count": 12,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0196
+    },
+    {
+      "id": "TDR078",
+      "x": 190.45,
+      "y": 326.64,
+      "risk_score": 0.3128,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 77,
+      "avg_volume": 9306.46,
+      "avg_cancel": 0.1252,
+      "suspicious_count": 8,
+      "community": 0,
+      "degree_centrality": 0.1013,
+      "betweenness_centrality": 0.0201
+    },
+    {
+      "id": "TDR079",
+      "x": -166.79,
+      "y": 337.6,
+      "risk_score": 0.271,
+      "risk_level": "LOW",
+      "pattern": "Normal",
+      "total_trades": 75,
+      "avg_volume": 6658.05,
+      "avg_cancel": 0.1246,
+      "suspicious_count": 6,
+      "community": 1,
+      "degree_centrality": 0.0759,
+      "betweenness_centrality": 0.0097
+    }
+  ],
+  "edges": [
+    {
+      "source": "TDR000",
+      "target": "TDR004",
+      "weight": 0.2787,
+      "suspicious": false
+    },
+    {
+      "source": "TDR000",
+      "target": "TDR002",
+      "weight": 0.28,
+      "suspicious": false
+    },
+    {
+      "source": "TDR000",
+      "target": "TDR017",
+      "weight": 0.3095,
+      "suspicious": false
+    },
+    {
+      "source": "TDR000",
+      "target": "TDR052",
+      "weight": 0.3039,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR078",
+      "weight": 0.3171,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR016",
+      "weight": 0.309,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR028",
+      "weight": 0.2931,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR035",
+      "weight": 0.3068,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR064",
+      "weight": 0.3389,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR008",
+      "weight": 0.3064,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR021",
+      "weight": 0.3534,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR038",
+      "weight": 0.2973,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR041",
+      "weight": 0.2935,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR057",
+      "weight": 0.2997,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR065",
+      "weight": 0.2901,
+      "suspicious": false
+    },
+    {
+      "source": "TDR001",
+      "target": "TDR073",
+      "weight": 0.3324,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR013",
+      "weight": 0.2738,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR042",
+      "weight": 0.2658,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR064",
+      "weight": 0.3138,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR071",
+      "weight": 0.2538,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR061",
+      "weight": 0.2758,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR026",
+      "weight": 0.285,
+      "suspicious": false
+    },
+    {
+      "source": "TDR002",
+      "target": "TDR057",
+      "weight": 0.2747,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR075",
+      "weight": 0.2388,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR041",
+      "weight": 0.2526,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR069",
+      "weight": 0.2586,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR056",
+      "weight": 0.2994,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR010",
+      "weight": 0.2425,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR030",
+      "weight": 0.2487,
+      "suspicious": false
+    },
+    {
+      "source": "TDR003",
+      "target": "TDR033",
+      "weight": 0.2849,
+      "suspicious": false
+    },
+    {
+      "source": "TDR004",
+      "target": "TDR026",
+      "weight": 0.2837,
+      "suspicious": false
+    },
+    {
+      "source": "TDR004",
+      "target": "TDR066",
+      "weight": 0.2813,
+      "suspicious": false
+    },
+    {
+      "source": "TDR004",
+      "target": "TDR030",
+      "weight": 0.2633,
+      "suspicious": false
+    },
+    {
+      "source": "TDR004",
+      "target": "TDR028",
+      "weight": 0.2667,
+      "suspicious": false
+    },
+    {
+      "source": "TDR004",
+      "target": "TDR052",
+      "weight": 0.2938,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR017",
+      "weight": 0.3118,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR008",
+      "weight": 0.2923,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR014",
+      "weight": 0.3079,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR031",
+      "weight": 0.3186,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR060",
+      "weight": 0.2655,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR073",
+      "weight": 0.3183,
+      "suspicious": false
+    },
+    {
+      "source": "TDR005",
+      "target": "TDR074",
+      "weight": 0.3203,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR042",
+      "weight": 0.2884,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR018",
+      "weight": 0.2904,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR032",
+      "weight": 0.3197,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR029",
+      "weight": 0.3172,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR031",
+      "weight": 0.3303,
+      "suspicious": false
+    },
+    {
+      "source": "TDR006",
+      "target": "TDR050",
+      "weight": 0.3114,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR023",
+      "weight": 0.3243,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR064",
+      "weight": 0.3538,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR031",
+      "weight": 0.3477,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR021",
+      "weight": 0.3684,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR026",
+      "weight": 0.325,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR035",
+      "weight": 0.3218,
+      "suspicious": false
+    },
+    {
+      "source": "TDR007",
+      "target": "TDR036",
+      "weight": 0.3386,
+      "suspicious": false
+    },
+    {
+      "source": "TDR008",
+      "target": "TDR052",
+      "weight": 0.3053,
+      "suspicious": false
+    },
+    {
+      "source": "TDR008",
+      "target": "TDR012",
+      "weight": 0.2804,
+      "suspicious": false
+    },
+    {
+      "source": "TDR008",
+      "target": "TDR067",
+      "weight": 0.2949,
+      "suspicious": false
+    },
+    {
+      "source": "TDR008",
+      "target": "TDR076",
+      "weight": 0.2796,
+      "suspicious": false
+    },
+    {
+      "source": "TDR009",
+      "target": "TDR019",
+      "weight": 0.2677,
+      "suspicious": false
+    },
+    {
+      "source": "TDR009",
+      "target": "TDR034",
+      "weight": 0.3031,
+      "suspicious": false
+    },
+    {
+      "source": "TDR009",
+      "target": "TDR031",
+      "weight": 0.3149,
+      "suspicious": false
+    },
+    {
+      "source": "TDR009",
+      "target": "TDR055",
+      "weight": 0.2897,
+      "suspicious": false
+    },
+    {
+      "source": "TDR009",
+      "target": "TDR035",
+      "weight": 0.289,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR014",
+      "weight": 0.2841,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR069",
+      "weight": 0.2617,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR061",
+      "weight": 0.263,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR033",
+      "weight": 0.288,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR064",
+      "weight": 0.301,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR044",
+      "weight": 0.2649,
+      "suspicious": false
+    },
+    {
+      "source": "TDR010",
+      "target": "TDR052",
+      "weight": 0.2824,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR057",
+      "weight": 0.2799,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR059",
+      "weight": 0.2757,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR020",
+      "weight": 0.2863,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR043",
+      "weight": 0.3156,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR062",
+      "weight": 0.2919,
+      "suspicious": false
+    },
+    {
+      "source": "TDR011",
+      "target": "TDR027",
+      "weight": 0.3,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR057",
+      "weight": 0.2737,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR050",
+      "weight": 0.2878,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR065",
+      "weight": 0.2641,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR054",
+      "weight": 0.2767,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR066",
+      "weight": 0.2817,
+      "suspicious": false
+    },
+    {
+      "source": "TDR012",
+      "target": "TDR021",
+      "weight": 0.3274,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR066",
+      "weight": 0.2852,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR072",
+      "weight": 0.3007,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR017",
+      "weight": 0.3033,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR073",
+      "weight": 0.3099,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR064",
+      "weight": 0.3164,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR046",
+      "weight": 0.2971,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR026",
+      "weight": 0.2875,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR049",
+      "weight": 0.274,
+      "suspicious": false
+    },
+    {
+      "source": "TDR013",
+      "target": "TDR060",
+      "weight": 0.2571,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR051",
+      "weight": 0.2861,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR031",
+      "weight": 0.3333,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR015",
+      "weight": 0.3135,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR037",
+      "weight": 0.3236,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR048",
+      "weight": 0.3058,
+      "suspicious": false
+    },
+    {
+      "source": "TDR014",
+      "target": "TDR050",
+      "weight": 0.3144,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR074",
+      "weight": 0.3259,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR051",
+      "weight": 0.277,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR060",
+      "weight": 0.2711,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR016",
+      "weight": 0.3005,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR065",
+      "weight": 0.2816,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR068",
+      "weight": 0.2768,
+      "suspicious": false
+    },
+    {
+      "source": "TDR015",
+      "target": "TDR058",
+      "weight": 0.281,
+      "suspicious": false
+    },
+    {
+      "source": "TDR016",
+      "target": "TDR077",
+      "weight": 0.3396,
+      "suspicious": false
+    },
+    {
+      "source": "TDR016",
+      "target": "TDR047",
+      "weight": 0.324,
+      "suspicious": false
+    },
+    {
+      "source": "TDR016",
+      "target": "TDR026",
+      "weight": 0.2976,
+      "suspicious": false
+    },
+    {
+      "source": "TDR016",
+      "target": "TDR053",
+      "weight": 0.2776,
+      "suspicious": false
+    },
+    {
+      "source": "TDR017",
+      "target": "TDR032",
+      "weight": 0.3266,
+      "suspicious": false
+    },
+    {
+      "source": "TDR017",
+      "target": "TDR055",
+      "weight": 0.312,
+      "suspicious": false
+    },
+    {
+      "source": "TDR017",
+      "target": "TDR067",
+      "weight": 0.3143,
+      "suspicious": false
+    },
+    {
+      "source": "TDR017",
+      "target": "TDR022",
+      "weight": 0.3112,
+      "suspicious": false
+    },
+    {
+      "source": "TDR017",
+      "target": "TDR025",
+      "weight": 0.31,
+      "suspicious": false
+    },
+    {
+      "source": "TDR018",
+      "target": "TDR056",
+      "weight": 0.3118,
+      "suspicious": false
+    },
+    {
+      "source": "TDR018",
+      "target": "TDR029",
+      "weight": 0.2911,
+      "suspicious": false
+    },
+    {
+      "source": "TDR018",
+      "target": "TDR019",
+      "weight": 0.2569,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR057",
+      "weight": 0.2638,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR039",
+      "weight": 0.2527,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR042",
+      "weight": 0.2549,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR051",
+      "weight": 0.2496,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR076",
+      "weight": 0.2586,
+      "suspicious": false
+    },
+    {
+      "source": "TDR019",
+      "target": "TDR078",
+      "weight": 0.2812,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR073",
+      "weight": 0.3173,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR034",
+      "weight": 0.3057,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR021",
+      "weight": 0.3382,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR079",
+      "weight": 0.281,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR066",
+      "weight": 0.2925,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR044",
+      "weight": 0.2876,
+      "suspicious": false
+    },
+    {
+      "source": "TDR020",
+      "target": "TDR030",
+      "weight": 0.2745,
+      "suspicious": false
+    },
+    {
+      "source": "TDR021",
+      "target": "TDR022",
+      "weight": 0.3388,
+      "suspicious": false
+    },
+    {
+      "source": "TDR021",
+      "target": "TDR052",
+      "weight": 0.3523,
+      "suspicious": false
+    },
+    {
+      "source": "TDR021",
+      "target": "TDR047",
+      "weight": 0.3685,
+      "suspicious": false
+    },
+    {
+      "source": "TDR021",
+      "target": "TDR070",
+      "weight": 0.3077,
+      "suspicious": false
+    },
+    {
+      "source": "TDR022",
+      "target": "TDR054",
+      "weight": 0.288,
+      "suspicious": false
+    },
+    {
+      "source": "TDR022",
+      "target": "TDR047",
+      "weight": 0.3218,
+      "suspicious": false
+    },
+    {
+      "source": "TDR022",
+      "target": "TDR045",
+      "weight": 0.2967,
+      "suspicious": false
+    },
+    {
+      "source": "TDR022",
+      "target": "TDR068",
+      "weight": 0.2707,
+      "suspicious": false
+    },
+    {
+      "source": "TDR023",
+      "target": "TDR035",
+      "weight": 0.2947,
+      "suspicious": false
+    },
+    {
+      "source": "TDR023",
+      "target": "TDR063",
+      "weight": 0.3078,
+      "suspicious": false
+    },
+    {
+      "source": "TDR023",
+      "target": "TDR041",
+      "weight": 0.2815,
+      "suspicious": false
+    },
+    {
+      "source": "TDR023",
+      "target": "TDR061",
+      "weight": 0.2888,
+      "suspicious": false
+    },
+    {
+      "source": "TDR024",
+      "target": "TDR071",
+      "weight": 0.2672,
+      "suspicious": false
+    },
+    {
+      "source": "TDR024",
+      "target": "TDR052",
+      "weight": 0.3085,
+      "suspicious": false
+    },
+    {
+      "source": "TDR024",
+      "target": "TDR067",
+      "weight": 0.2981,
+      "suspicious": false
+    },
+    {
+      "source": "TDR025",
+      "target": "TDR070",
+      "weight": 0.2599,
+      "suspicious": false
+    },
+    {
+      "source": "TDR025",
+      "target": "TDR044",
+      "weight": 0.287,
+      "suspicious": false
+    },
+    {
+      "source": "TDR025",
+      "target": "TDR027",
+      "weight": 0.304,
+      "suspicious": false
+    },
+    {
+      "source": "TDR026",
+      "target": "TDR044",
+      "weight": 0.2915,
+      "suspicious": false
+    },
+    {
+      "source": "TDR026",
+      "target": "TDR075",
+      "weight": 0.2684,
+      "suspicious": false
+    },
+    {
+      "source": "TDR026",
+      "target": "TDR051",
+      "weight": 0.2742,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR037",
+      "weight": 0.3215,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR077",
+      "weight": 0.3505,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR044",
+      "weight": 0.3012,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR042",
+      "weight": 0.2893,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR048",
+      "weight": 0.3036,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR056",
+      "weight": 0.3388,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR059",
+      "weight": 0.294,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR070",
+      "weight": 0.2741,
+      "suspicious": false
+    },
+    {
+      "source": "TDR027",
+      "target": "TDR078",
+      "weight": 0.3155,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR033",
+      "weight": 0.2976,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR036",
+      "weight": 0.2954,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR056",
+      "weight": 0.3121,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR041",
+      "weight": 0.2653,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR045",
+      "weight": 0.2831,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR061",
+      "weight": 0.2726,
+      "suspicious": false
+    },
+    {
+      "source": "TDR028",
+      "target": "TDR075",
+      "weight": 0.2515,
+      "suspicious": false
+    },
+    {
+      "source": "TDR029",
+      "target": "TDR056",
+      "weight": 0.3387,
+      "suspicious": false
+    },
+    {
+      "source": "TDR029",
+      "target": "TDR063",
+      "weight": 0.3182,
+      "suspicious": false
+    },
+    {
+      "source": "TDR030",
+      "target": "TDR036",
+      "weight": 0.2919,
+      "suspicious": false
+    },
+    {
+      "source": "TDR030",
+      "target": "TDR039",
+      "weight": 0.2569,
+      "suspicious": false
+    },
+    {
+      "source": "TDR030",
+      "target": "TDR053",
+      "weight": 0.2583,
+      "suspicious": false
+    },
+    {
+      "source": "TDR030",
+      "target": "TDR069",
+      "weight": 0.2679,
+      "suspicious": false
+    },
+    {
+      "source": "TDR031",
+      "target": "TDR073",
+      "weight": 0.3438,
+      "suspicious": false
+    },
+    {
+      "source": "TDR031",
+      "target": "TDR042",
+      "weight": 0.3021,
+      "suspicious": false
+    },
+    {
+      "source": "TDR031",
+      "target": "TDR070",
+      "weight": 0.287,
+      "suspicious": false
+    },
+    {
+      "source": "TDR031",
+      "target": "TDR078",
+      "weight": 0.3284,
+      "suspicious": false
+    },
+    {
+      "source": "TDR032",
+      "target": "TDR061",
+      "weight": 0.3016,
+      "suspicious": false
+    },
+    {
+      "source": "TDR032",
+      "target": "TDR057",
+      "weight": 0.3005,
+      "suspicious": false
+    },
+    {
+      "source": "TDR032",
+      "target": "TDR050",
+      "weight": 0.3145,
+      "suspicious": false
+    },
+    {
+      "source": "TDR033",
+      "target": "TDR046",
+      "weight": 0.3241,
+      "suspicious": false
+    },
+    {
+      "source": "TDR033",
+      "target": "TDR074",
+      "weight": 0.3389,
+      "suspicious": false
+    },
+    {
+      "source": "TDR033",
+      "target": "TDR040",
+      "weight": 0.2861,
+      "suspicious": false
+    },
+    {
+      "source": "TDR034",
+      "target": "TDR072",
+      "weight": 0.3227,
+      "suspicious": false
+    },
+    {
+      "source": "TDR034",
+      "target": "TDR035",
+      "weight": 0.3063,
+      "suspicious": false
+    },
+    {
+      "source": "TDR034",
+      "target": "TDR070",
+      "weight": 0.2752,
+      "suspicious": false
+    },
+    {
+      "source": "TDR034",
+      "target": "TDR040",
+      "weight": 0.2811,
+      "suspicious": false
+    },
+    {
+      "source": "TDR035",
+      "target": "TDR052",
+      "weight": 0.3057,
+      "suspicious": false
+    },
+    {
+      "source": "TDR035",
+      "target": "TDR041",
+      "weight": 0.279,
+      "suspicious": false
+    },
+    {
+      "source": "TDR035",
+      "target": "TDR054",
+      "weight": 0.2881,
+      "suspicious": false
+    },
+    {
+      "source": "TDR035",
+      "target": "TDR067",
+      "weight": 0.2952,
+      "suspicious": false
+    },
+    {
+      "source": "TDR035",
+      "target": "TDR075",
+      "weight": 0.2652,
+      "suspicious": false
+    },
+    {
+      "source": "TDR036",
+      "target": "TDR068",
+      "weight": 0.2876,
+      "suspicious": false
+    },
+    {
+      "source": "TDR036",
+      "target": "TDR039",
+      "weight": 0.291,
+      "suspicious": false
+    },
+    {
+      "source": "TDR036",
+      "target": "TDR062",
+      "weight": 0.3141,
+      "suspicious": false
+    },
+    {
+      "source": "TDR037",
+      "target": "TDR054",
+      "weight": 0.3043,
+      "suspicious": false
+    },
+    {
+      "source": "TDR037",
+      "target": "TDR045",
+      "weight": 0.313,
+      "suspicious": false
+    },
+    {
+      "source": "TDR037",
+      "target": "TDR056",
+      "weight": 0.3421,
+      "suspicious": false
+    },
+    {
+      "source": "TDR038",
+      "target": "TDR079",
+      "weight": 0.2721,
+      "suspicious": false
+    },
+    {
+      "source": "TDR038",
+      "target": "TDR048",
+      "weight": 0.2811,
+      "suspicious": false
+    },
+    {
+      "source": "TDR038",
+      "target": "TDR052",
+      "weight": 0.2961,
+      "suspicious": false
+    },
+    {
+      "source": "TDR038",
+      "target": "TDR058",
+      "weight": 0.2654,
+      "suspicious": false
+    },
+    {
+      "source": "TDR039",
+      "target": "TDR063",
+      "weight": 0.2872,
+      "suspicious": false
+    },
+    {
+      "source": "TDR039",
+      "target": "TDR072",
+      "weight": 0.2905,
+      "suspicious": false
+    },
+    {
+      "source": "TDR039",
+      "target": "TDR061",
+      "weight": 0.2682,
+      "suspicious": false
+    },
+    {
+      "source": "TDR039",
+      "target": "TDR067",
+      "weight": 0.2771,
+      "suspicious": false
+    },
+    {
+      "source": "TDR040",
+      "target": "TDR053",
+      "weight": 0.2502,
+      "suspicious": false
+    },
+    {
+      "source": "TDR040",
+      "target": "TDR076",
+      "weight": 0.2547,
+      "suspicious": false
+    },
+    {
+      "source": "TDR040",
+      "target": "TDR043",
+      "weight": 0.2957,
+      "suspicious": false
+    },
+    {
+      "source": "TDR040",
+      "target": "TDR066",
+      "weight": 0.2679,
+      "suspicious": false
+    },
+    {
+      "source": "TDR040",
+      "target": "TDR077",
+      "weight": 0.3122,
+      "suspicious": false
+    },
+    {
+      "source": "TDR041",
+      "target": "TDR076",
+      "weight": 0.2667,
+      "suspicious": false
+    },
+    {
+      "source": "TDR041",
+      "target": "TDR071",
+      "weight": 0.251,
+      "suspicious": false
+    },
+    {
+      "source": "TDR042",
+      "target": "TDR051",
+      "weight": 0.255,
+      "suspicious": false
+    },
+    {
+      "source": "TDR042",
+      "target": "TDR077",
+      "weight": 0.3215,
+      "suspicious": false
+    },
+    {
+      "source": "TDR042",
+      "target": "TDR061",
+      "weight": 0.2703,
+      "suspicious": false
+    },
+    {
+      "source": "TDR042",
+      "target": "TDR079",
+      "weight": 0.2657,
+      "suspicious": false
+    },
+    {
+      "source": "TDR043",
+      "target": "TDR059",
+      "weight": 0.3096,
+      "suspicious": false
+    },
+    {
+      "source": "TDR043",
+      "target": "TDR064",
+      "weight": 0.353,
+      "suspicious": false
+    },
+    {
+      "source": "TDR043",
+      "target": "TDR052",
+      "weight": 0.3343,
+      "suspicious": false
+    },
+    {
+      "source": "TDR043",
+      "target": "TDR056",
+      "weight": 0.3545,
+      "suspicious": false
+    },
+    {
+      "source": "TDR043",
+      "target": "TDR057",
+      "weight": 0.3138,
+      "suspicious": false
+    },
+    {
+      "source": "TDR044",
+      "target": "TDR054",
+      "weight": 0.2841,
+      "suspicious": false
+    },
+    {
+      "source": "TDR044",
+      "target": "TDR053",
+      "weight": 0.2714,
+      "suspicious": false
+    },
+    {
+      "source": "TDR044",
+      "target": "TDR051",
+      "weight": 0.267,
+      "suspicious": false
+    },
+    {
+      "source": "TDR044",
+      "target": "TDR063",
+      "weight": 0.3013,
+      "suspicious": false
+    },
+    {
+      "source": "TDR044",
+      "target": "TDR072",
+      "weight": 0.3046,
+      "suspicious": false
+    },
+    {
+      "source": "TDR045",
+      "target": "TDR065",
+      "weight": 0.2801,
+      "suspicious": false
+    },
+    {
+      "source": "TDR045",
+      "target": "TDR052",
+      "weight": 0.3102,
+      "suspicious": false
+    },
+    {
+      "source": "TDR045",
+      "target": "TDR070",
+      "weight": 0.2657,
+      "suspicious": false
+    },
+    {
+      "source": "TDR045",
+      "target": "TDR072",
+      "weight": 0.3131,
+      "suspicious": false
+    },
+    {
+      "source": "TDR045",
+      "target": "TDR079",
+      "weight": 0.2862,
+      "suspicious": false
+    },
+    {
+      "source": "TDR046",
+      "target": "TDR070",
+      "weight": 0.2739,
+      "suspicious": false
+    },
+    {
+      "source": "TDR046",
+      "target": "TDR073",
+      "weight": 0.3306,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR062",
+      "weight": 0.3268,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR050",
+      "weight": 0.3288,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR048",
+      "weight": 0.3202,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR051",
+      "weight": 0.3006,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR065",
+      "weight": 0.3052,
+      "suspicious": false
+    },
+    {
+      "source": "TDR047",
+      "target": "TDR068",
+      "weight": 0.3003,
+      "suspicious": false
+    },
+    {
+      "source": "TDR048",
+      "target": "TDR054",
+      "weight": 0.2865,
+      "suspicious": false
+    },
+    {
+      "source": "TDR048",
+      "target": "TDR060",
+      "weight": 0.2634,
+      "suspicious": false
+    },
+    {
+      "source": "TDR048",
+      "target": "TDR071",
+      "weight": 0.2627,
+      "suspicious": false
+    },
+    {
+      "source": "TDR048",
+      "target": "TDR078",
+      "weight": 0.3009,
+      "suspicious": false
+    },
+    {
+      "source": "TDR049",
+      "target": "TDR069",
+      "weight": 0.2747,
+      "suspicious": false
+    },
+    {
+      "source": "TDR049",
+      "target": "TDR061",
+      "weight": 0.276,
+      "suspicious": false
+    },
+    {
+      "source": "TDR049",
+      "target": "TDR078",
+      "weight": 0.2922,
+      "suspicious": false
+    },
+    {
+      "source": "TDR050",
+      "target": "TDR059",
+      "weight": 0.2879,
+      "suspicious": false
+    },
+    {
+      "source": "TDR050",
+      "target": "TDR064",
+      "weight": 0.3313,
+      "suspicious": false
+    },
+    {
+      "source": "TDR050",
+      "target": "TDR077",
+      "weight": 0.3445,
+      "suspicious": false
+    },
+    {
+      "source": "TDR051",
+      "target": "TDR067",
+      "weight": 0.2739,
+      "suspicious": false
+    },
+    {
+      "source": "TDR051",
+      "target": "TDR079",
+      "weight": 0.2604,
+      "suspicious": false
+    },
+    {
+      "source": "TDR052",
+      "target": "TDR072",
+      "weight": 0.322,
+      "suspicious": false
+    },
+    {
+      "source": "TDR052",
+      "target": "TDR068",
+      "weight": 0.2841,
+      "suspicious": false
+    },
+    {
+      "source": "TDR053",
+      "target": "TDR062",
+      "weight": 0.2804,
+      "suspicious": false
+    },
+    {
+      "source": "TDR054",
+      "target": "TDR073",
+      "weight": 0.3137,
+      "suspicious": false
+    },
+    {
+      "source": "TDR055",
+      "target": "TDR066",
+      "weight": 0.2938,
+      "suspicious": false
+    },
+    {
+      "source": "TDR055",
+      "target": "TDR071",
+      "weight": 0.265,
+      "suspicious": false
+    },
+    {
+      "source": "TDR055",
+      "target": "TDR060",
+      "weight": 0.2657,
+      "suspicious": false
+    },
+    {
+      "source": "TDR055",
+      "target": "TDR065",
+      "weight": 0.2762,
+      "suspicious": false
+    },
+    {
+      "source": "TDR055",
+      "target": "TDR072",
+      "weight": 0.3093,
+      "suspicious": false
+    },
+    {
+      "source": "TDR056",
+      "target": "TDR063",
+      "weight": 0.3389,
+      "suspicious": false
+    },
+    {
+      "source": "TDR056",
+      "target": "TDR070",
+      "weight": 0.2947,
+      "suspicious": false
+    },
+    {
+      "source": "TDR056",
+      "target": "TDR073",
+      "weight": 0.3515,
+      "suspicious": false
+    },
+    {
+      "source": "TDR057",
+      "target": "TDR059",
+      "weight": 0.2739,
+      "suspicious": false
+    },
+    {
+      "source": "TDR057",
+      "target": "TDR061",
+      "weight": 0.2792,
+      "suspicious": false
+    },
+    {
+      "source": "TDR057",
+      "target": "TDR076",
+      "weight": 0.2729,
+      "suspicious": false
+    },
+    {
+      "source": "TDR058",
+      "target": "TDR059",
+      "weight": 0.2637,
+      "suspicious": false
+    },
+    {
+      "source": "TDR059",
+      "target": "TDR073",
+      "weight": 0.3066,
+      "suspicious": false
+    },
+    {
+      "source": "TDR059",
+      "target": "TDR065",
+      "weight": 0.2643,
+      "suspicious": false
+    },
+    {
+      "source": "TDR060",
+      "target": "TDR067",
+      "weight": 0.268,
+      "suspicious": false
+    },
+    {
+      "source": "TDR061",
+      "target": "TDR062",
+      "weight": 0.2913,
+      "suspicious": false
+    },
+    {
+      "source": "TDR061",
+      "target": "TDR063",
+      "weight": 0.2994,
+      "suspicious": false
+    },
+    {
+      "source": "TDR063",
+      "target": "TDR064",
+      "weight": 0.3374,
+      "suspicious": false
+    },
+    {
+      "source": "TDR063",
+      "target": "TDR074",
+      "weight": 0.3329,
+      "suspicious": false
+    },
+    {
+      "source": "TDR063",
+      "target": "TDR075",
+      "weight": 0.2783,
+      "suspicious": false
+    },
+    {
+      "source": "TDR064",
+      "target": "TDR074",
+      "weight": 0.3519,
+      "suspicious": false
+    },
+    {
+      "source": "TDR064",
+      "target": "TDR068",
+      "weight": 0.3028,
+      "suspicious": false
+    },
+    {
+      "source": "TDR064",
+      "target": "TDR069",
+      "weight": 0.3171,
+      "suspicious": false
+    },
+    {
+      "source": "TDR064",
+      "target": "TDR071",
+      "weight": 0.2964,
+      "suspicious": false
+    },
+    {
+      "source": "TDR065",
+      "target": "TDR074",
+      "weight": 0.3032,
+      "suspicious": false
+    },
+    {
+      "source": "TDR065",
+      "target": "TDR070",
+      "weight": 0.2444,
+      "suspicious": false
+    },
+    {
+      "source": "TDR065",
+      "target": "TDR067",
+      "weight": 0.2786,
+      "suspicious": false
+    },
+    {
+      "source": "TDR065",
+      "target": "TDR079",
+      "weight": 0.265,
+      "suspicious": false
+    },
+    {
+      "source": "TDR066",
+      "target": "TDR070",
+      "weight": 0.262,
+      "suspicious": false
+    },
+    {
+      "source": "TDR066",
+      "target": "TDR075",
+      "weight": 0.2661,
+      "suspicious": false
+    },
+    {
+      "source": "TDR070",
+      "target": "TDR075",
+      "weight": 0.2341,
+      "suspicious": false
+    },
+    {
+      "source": "TDR071",
+      "target": "TDR077",
+      "weight": 0.3095,
+      "suspicious": false
+    },
+    {
+      "source": "TDR072",
+      "target": "TDR075",
+      "weight": 0.2816,
+      "suspicious": false
+    },
+    {
+      "source": "TDR072",
+      "target": "TDR078",
+      "weight": 0.3189,
+      "suspicious": false
+    },
+    {
+      "source": "TDR073",
+      "target": "TDR076",
+      "weight": 0.3056,
+      "suspicious": false
+    },
+    {
+      "source": "TDR075",
+      "target": "TDR077",
+      "weight": 0.3104,
+      "suspicious": false
+    },
+    {
+      "source": "TDR077",
+      "target": "TDR078",
+      "weight": 0.3478,
+      "suspicious": false
+    }
+  ],
+  "summary": {
+    "total_traders": 80,
+    "total_connections": 293,
+    "high_risk_traders": 0,
+    "medium_risk_traders": 6,
+    "suspicious_connections": 0,
+    "communities_detected": 5,
+    "suspicious_clusters": 3,
+    "top_hub_traders": [
+      [
+        "TDR001",
+        0.1518987341772152
+      ],
+      [
+        "TDR052",
+        0.1518987341772152
+      ],
+      [
+        "TDR064",
+        0.1518987341772152
+      ],
+      [
+        "TDR027",
+        0.13924050632911392
+      ],
+      [
+        "TDR061",
+        0.13924050632911392
+      ]
+    ]
+  }
+}
