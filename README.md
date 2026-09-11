@@ -79,7 +79,7 @@ Trading-Surveillance-System/
 ⚙️ Installation
 1. Clone the repository
 
-git clone https://github.com/johnnikhil77/Trading---Survailence---system.git
+git clone (https://github.com/karthikeya0407/Trading-Survailence-System.git)
 cd Trading---Survailence---system
 2. Install dependencies
 
